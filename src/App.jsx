@@ -17,6 +17,10 @@ function App() {
     const newList = [...todo, newtodo]
     persistData(newList)
     setTodo(newList)
+
+    if(edit != null){
+      setEdit(null)
+    }
     
   }
   function handleDelete(id){
