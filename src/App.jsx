@@ -14,12 +14,15 @@ function App() {
   }
 
   function handleTodo(newtodo){
-    const newList = [...todo, newtodo]
-    persistData(newList)
-    setTodo(newList)
+    if(newtodo !=""){
 
-    if(edit != null){
-      setEdit(null)
+      const newList = [...todo, newtodo]
+      persistData(newList)
+      setTodo(newList)
+  
+      if(edit != null){
+        setEdit(null)
+      }
     }
     
   }
