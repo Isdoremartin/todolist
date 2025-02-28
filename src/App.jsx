@@ -14,7 +14,7 @@ function App() {
   }
 
   function handleTodo(newtodo){
-    if(newtodo !=""){
+    if(newtodo != " "){
 
       const newList = [...todo, newtodo]
       persistData(newList)
